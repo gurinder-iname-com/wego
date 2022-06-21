@@ -21,6 +21,11 @@ func IntUnderScoreTest() {
 }
 
 func FloatTest() {
-	var firstFloat float32 = 1.2
+	var firstFloat float64 = 1.2
+	var secondFloat float64 = -1.2
+	var thirdFloat float64 = 0
 	log.Println(firstFloat)
+	log.Println(firstFloat / 0)
+	log.Println(secondFloat / 0)
+	log.Println(0.0 / thirdFloat)
 }
